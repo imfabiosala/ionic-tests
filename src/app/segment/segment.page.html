@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Segment / Swiper
+    </ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-segment mode="md" [(ngModel)]="selectedSegment">
+      <ion-segment-button value="header">
+        Cabeçalho
+      </ion-segment-button>
+      <ion-segment-button value="items">
+        Itens
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <swiper-container (slidechange)="onSlideChange($event)">
+    <swiper-slide>
+      <h2>Cabeçalho</h2>
+    </swiper-slide>
+    <swiper-slide>
+      <h2>Itens</h2>
+    </swiper-slide>
+  </swiper-container>
+</ion-content>

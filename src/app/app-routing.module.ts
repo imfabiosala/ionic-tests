@@ -15,6 +15,11 @@ const routes: Routes = [
     path: 'skip-field',
     loadChildren: () => import('./skip-field/skip-field.module').then( m => m.SkipFieldPageModule)
   },
+  {
+    path: 'segment',
+    loadChildren: () => import('./segment/segment.module').then( m => m.SegmentPageModule)
+  },
+
 ];
 
 @NgModule({
