@@ -22,7 +22,12 @@ const routes: Routes = [
   {
     path: 'local-storage',
     loadChildren: () => import('./local-storage/local-storage.module').then( m => m.LocalStoragePageModule)
+  },
+  {
+    path: 'input-mask',
+    loadChildren: () => import('./input-mask/input-mask.module').then( m => m.InputMaskPageModule)
   }
+
 ];
 
 @NgModule({

@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Input Mask</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col>
+      <ion-input label="Telefone" label-placement="stacked" fill="outline" placeholder="Telefone" [maskito]="phoneNumberMask" [maskitoElement]="predicate" [value]="phoneNumber"></ion-input>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-input label="CEP" label-placement="stacked" fill="outline" placeholder="CEP" [maskito]="zipcodeMask" [maskitoElement]="predicate" [value]="zipcode"></ion-input>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-input label="Data" label-placement="stacked" fill="outline" placeholder="Data" [maskito]="dateMask" [maskitoElement]="predicate" [value]="date"></ion-input>
+    </ion-col>
+    <ion-col>
+      <ion-input label="Hora" label-placement="stacked" fill="outline" placeholder="Hora" [maskito]="hourMask" [maskitoElement]="predicate" [value]="hour"></ion-input>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-input label="Peso Líquido" label-placement="stacked" fill="outline" placeholder="Peso Líquido" [maskito]="weightMask" [maskitoElement]="predicate" [value]="weight"></ion-input>
+    </ion-col>
+  </ion-row>
+</ion-content>
