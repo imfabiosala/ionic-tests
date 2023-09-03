@@ -19,7 +19,10 @@ const routes: Routes = [
     path: 'segment',
     loadChildren: () => import('./segment/segment.module').then( m => m.SegmentPageModule)
   },
-
+  {
+    path: 'local-storage',
+    loadChildren: () => import('./local-storage/local-storage.module').then( m => m.LocalStoragePageModule)
+  }
 ];
 
 @NgModule({
